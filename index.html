@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyaAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="AyaAI Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#vision">Our Vision</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+    <section id="home" class="section">
+        <div class="content">
+            <h1>Small actions lead to incredible things. Let's create them together.</h1>
+            <p>AyaAI is crafting the next evolution of AI, designed to power an innovative virtual world.</p>
+            <div class="cta-buttons">
+                <!-- <a href="https://github.com/AyaAI-Team" class="cta-button">Follow us on Github</a> -->
+                <a href="https://forms.gle/NiAf3xgcEk14PypK7" class="cta-button">Submit a Phrase</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h1>About AyaAI</h1>
+            <p>We are a small but dynamic team, driven by a wealth of innovative ideas and a shared passion for creating exceptional projects together. Collaboration is at the heart of what we do, and we’re committed to turning our collective vision into something truly remarkable.</p>
+        </div>
+    </section>
+
+    <section id="vision" class="section">
+        <div class="content">
+            <h1>Our Vision</h1>
+            <p>We envision a virtual world powered by autonomous AI systems, unlocking limitless possibilities, immersive experiences, and boundless creativity through groundbreaking innovations.</p>
+        </div>
+    </section>
+
+    <section id="resources" class="section">
+        <div class="content">
+            <h1>Resources</h1>
+            <p>In developement.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>Have questions? Reach out to us!</p>
+            <form action="https://formspree.io/f/mqaawvwp" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Hidden input to avoid Formspree spam -->
+                <input type="hidden" name="_subject" value="New submission from AyaAI Contact Form">
+
+                <!-- This input is required to avoid spam bots -->
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* General body and global styles */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Prevents horizontal scrolling caused by overflowing elements */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;  /* Remove default margins */
+    padding: 0; /* Remove default paddings */
+}
+
+/* Main navigation styles */
+header {
+    background-color: #111;
+    padding: 10px 20px;  /* Reduce padding to make the bar smaller */
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure it starts from the left edge */
+    width: 100%; /* Make the header stretch across the whole page */
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin: 0; /* No margin to avoid extra spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Align logo and nav items vertically */
+}
+
+/* Logo styling */
+.logo img {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #44c8ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effects on navigation links */
+nav ul li a:hover {
+    color: #fff;
+    background-color: #1c7f9b;
+    transform: scale(1.1);
+}
+
+/* Section styles */
+.section {
+    display: block;
+    padding: 120px 20px 20px 20px;  /* Added padding to the top to avoid overlap */
+    color: #fff;
+    text-align: center;
+    opacity: 0;  /* Sections start as invisible */
+    transition: opacity 1s ease-in-out;  /* Fade in effect */
+}
+
+/* When a section comes into view, this class will be added */
+.section.visible {
+    opacity: 1;  /* Fade to fully visible */
+}
+
+/* Section content styles */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #44c8ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effects for call-to-action buttons */
+.cta-button:hover {
+    background-color: #1c7f9b;
+    transform: translateY(-5px);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align form elements to the left */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;  /* Dark background for form */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;  /* Ensure padding is inside the width */
+}
+
+form textarea {
+    resize: none;  /* Prevent resizing of the textarea */
+    height: 150px;  /* Fix height to prevent expansion */
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #44c8ff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    width: 100%;  /* Make button take full width */
+}
+
+form button:hover {
+    background-color: #1c7f9b;
+    transform: translateY(-2px);
+}
+
+/* Sticky header effect */
+header.sticky {
+    background-color: #111;
+}
